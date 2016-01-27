@@ -1,0 +1,111 @@
+/*
+Thomas Mullen 2015
+
+Font from https://www.behance.net/gallery/18588437/Thin-Line-Font
+*/
+
+ @font-face {font-family: MyFont; src: url('MyFont.otf'); }
+
+canvas {
+	position: absolute;
+    z-index:-1;
+    left:0;
+    top:0;
+    background-color: black;
+}
+body {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+.just-text-button {
+	margin-left: 64px;
+    margin-top :10px;
+	background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:MyFont;
+	font-weight:bolder;
+	font-size:30px;
+	padding-left:8px
+	padding-top:9px;
+	text-decoration:none;
+	border-style:hidden;
+	outline:none;
+
+    cursor: pointer;
+
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+.just-text-button:hover {
+	color:#ffffff !important;
+}π
+.just-text-button:active {
+	position:relative;
+	top:1px;
+    font-size:110%;
+
+}
+
+.round-button {
+    display:block;
+    position:absolute;
+    width:140px;
+    height:140px;
+    line-height:140px;
+    outline:none;
+
+    transform:translate(-50%, -50%);
+
+    border-width: 7px;
+    border-color: transparent;
+    border-style:solid;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background-color: transparent;
+    font-size:70px;
+	font-weight:bolder;
+	font-family:MyFont;
+	overflow: hidden;
+
+    cursor: pointer;
+
+    -webkit-transition: background 0.4s;
+    transition: background 0.8s, border-color 0.8s;
+}
+.round-button:hover {
+    background: #262626;
+    border-color: rgb(255,255,255);
+}
+
+.round-button.big{
+    width:350px;
+    height:350px;
+    line-height:200px;
+    font-size:42px;
+}
+
+.sized-image{
+    min-width:100%;
+    min-height:100%;
+    max-width:100%;
+    max-height:100%;
+    overflow:hidden;
+
+    cursor: pointer;
+}
+
+.text{
+    positon:absolute;
+    color:#f5f5f5;
+    font-size:70px;
+    font-weight:bolder;
+    font-family:MyFont;
+    text-align : center;
+}
