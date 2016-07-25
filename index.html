@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+    html {
+        background: black;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    div {
+        position: absolute;
+        z-index: 0;
+        left: 0px;
+        top: 0px;
+    }
+</style>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="rationalcoding.css" />
+    <title>Rational Coding</title>
+</head>
+
+<noscript>
     <style>
-        html{
-            background:black;
+        body {
+            display: none;
         }
-        body{
-          margin:0;
-          padding:0;
-        }
-        div{
-          position:absolute;
-          z-index:0;
-          left:0px;
-          top:0px;
-        }
-      </style>
-
-    <head>
-    	<link rel="stylesheet" type="text/css" href="rationalcoding.css" />
-    	<title>Rational Coding</title>
-    </head>
-
-    <noscript>
-        <style>
-        body{
-            display:none;
-        }
-        </style>
-        Javascript is not enabled in your browser, taking you to a safe version.
-        <meta http-equiv="refresh" content="1;url=https://rationalcoding.github.io" />
-    </noscript>
+    </style>
+    Javascript is not enabled in your browser, taking you to a safe version.
+    <meta http-equiv="refresh" content="1;url=https://rationalcoding.github.io" />
+</noscript>
 
 
-    <body>
-        <div id="background">
-            <a href="https://rationalcoding.github.io" class="just-text-button" style="color:#33CC33;">Home</a>
-          	<a id = "github" target = "_blank" href="https://github.com/RationalCoding" class="just-text-button" style="color:#0000CC;">GitHub</a>
-            <button id = "b1" class="just-text-button" style="color:#444444;">Fish</button>
-            <button id = "b2" class="just-text-button" style="color:#444444;">Food</button>
-            <button id = "b3" class="just-text-button" style="color:#444444;">Buoys</button>
-            <button id = "b4" class="just-text-button" style="color:#444444;">Big Fish</button>
-            <button id = "b5" class="just-text-button" style="color:#444444;">Player</button>
-          	<canvas id = "canvas" class="canvas"></canvas>
-          	<script id="scr_back" type="text/javascript" src="wave.js"></script>
-            <script id="scr_back" type="text/javascript" src="dynamic_scaling.js"></script>
-        </div>
-    </body>
+<body>
+    <div id="background">
+        <a target="_blank" id="github" href="https://rationalcoding.github.io" class="just-text-button" style="color:#33CC33;">Home</a>
+        <button id="b1" class="just-text-button" style="color:#444444;">Fish</button>
+        <button id="b2" class="just-text-button" style="color:#444444;">Food</button>
+        <button id="b3" class="just-text-button" style="color:#444444;">Buoys</button>
+        <button id="b4" class="just-text-button" style="color:#444444;">Big Fish</button>
+        <button id="b5" class="just-text-button" style="color:#444444;">Player</button>
+        <canvas id="canvas" class="canvas"></canvas>
+        <script id="scr_back" type="text/javascript" src="wave.js"></script>
+        <script id="scr_back" type="text/javascript" src="dynamic_scaling.js"></script>
+    </div>
+</body>
+
 </html>
